@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "./components/Header";
-import Footer from './components/Footer';
+import Footer from "./components/Footer";
 
 import "./components/Card.css";
 
@@ -8,9 +8,17 @@ function App() {
   return (
     <div className="bg-dark">
       <Header />
+      <div class="container-fluid text-center text-light">
+        <div class="row">
+          <div class="col-6 col-md-4">Column</div>
+          <div class="col-6 col-md-8">Column</div>
+        </div>
+      </div>
       <div className="container text-center mb-5">
         <div className="row d-flex justify-content-between align-items-center mb-5 flex-wrap">
-          <div className="col-6 col-md-4 text-start fs-2 fw-bold text-light">New Release</div>
+          <div className="col-6 col-md-4 text-start fs-2 fw-bold text-light">
+            New Release
+          </div>
           <div className="col-6 col-md-4 text-end fs-5">
             <button className="btn btn-link custom-btn">View More</button>
           </div>
@@ -218,7 +226,6 @@ function App() {
       </div>
       <Footer />
     </div>
-    
   );
 }
 
