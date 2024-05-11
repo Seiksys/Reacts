@@ -2,9 +2,8 @@ import React from "react";
 
 function Footer() {
   return (
-    <div className="container-fluid">
-      <footer className="bg-dark text-light py-4">
-        <div className="container">
+
+        <footer className="container-fluid">
           <div className="row">
             {/* 左侧区域 */}
             <div className="col-md-4">
@@ -183,9 +182,8 @@ function Footer() {
               </div>
             </div>
           </div>
-        </div>
-      </footer>
-    </div>
+        </footer>
+
   );
 }
 
