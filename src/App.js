@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="bg-dark">
       <Header />
-      <div className="container text-center">
+      <div className="container text-center mb-5">
         <div className="row d-flex justify-content-between align-items-center mb-5 flex-wrap">
           <div className="col-6 col-md-4 text-start fs-2 fw-bold text-light">New Release</div>
           <div className="col-6 col-md-4 text-end fs-5">
@@ -216,7 +216,9 @@ function App() {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
+    
   );
 }
 
