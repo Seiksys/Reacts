@@ -6,7 +6,7 @@ function Header() {
   return (
     <nav className="navbar navbar-expand-lg"> 
       <div className="container text-center">
-        <a className="navbar-brand fs-2 fw-bold" href="#">
+        <a className="navbar-brand fs-2 fw-bold text-light" href="#">
           PcariMovie
         </a>
         <button

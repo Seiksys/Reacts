@@ -2,12 +2,10 @@ import React from "react";
 
 function Footer() {
   return (
-
-        <footer className="container-fluid">
+        <footer className="container-fluid" style={{paddingLeft: 0}} >
           <div className="row">
-            {/* 左侧区域 */}
             <div className="col-md-4">
-              <div className="bg-primary p-4">
+              <div className="bg-primary p-4 pt-0">
                 <h1>PcariMovie</h1>
                 <p className="mb-4">
                   Lorem ipsum dolor sit amet, consec tetur adipis cing elit, sed
@@ -17,8 +15,8 @@ function Footer() {
                 <div className="position-relative">
                   <input
                     type="email"
-                    className="form-control me-2 w-50 text-light border-dark"
-                    style={{ backgroundColor: "rgba(61, 61, 61, 1)" }}
+                    className="form-control me-2text-light border-dark p-2"
+                    style={{ backgroundColor: "rgba(61, 61, 61, 1)", width:"200px" }}
                     placeholder="Enter email"
                   />
                   <button
@@ -26,8 +24,8 @@ function Footer() {
                     className="btn"
                     style={{
                       position: "absolute",
-                      right: "170px",
-                      top: "-3px",
+                      right: "180px",
+                      top: "-2px",
                     }}
                   >
                     <svg
@@ -44,7 +42,6 @@ function Footer() {
                 </div>
               </div>
             </div>
-            {/* 右侧区域 */}
             <div className="col-md-8">
               <div className="row align-items-start">
                 <div className="col mb-5">
@@ -137,8 +134,8 @@ function Footer() {
                     Press
                   </a>
                 </div>
-                <div className="col-12 mt-auto d-flex justify-content-between">
-                  <div className="d-flex align-items-center">
+                <div className="col-12 mt-auto d-flex justify-content-around">
+                  <div className="d-flex align-items-center text-light">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="16"
@@ -152,7 +149,7 @@ function Footer() {
                     </svg>
                     8819 Ohio St. South Gate, California 90280
                   </div>
-                  <div className="d-flex align-items-center">
+                  <div className="d-flex align-items-center text-light">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="16"
@@ -165,7 +162,7 @@ function Footer() {
                     </svg>
                     ourstudio@hello.com
                   </div>
-                  <div className="d-flex align-items-center">
+                  <div className="d-flex align-items-center text-light">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="16"
