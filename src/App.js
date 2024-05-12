@@ -1,19 +1,76 @@
 import React from "react";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-
 import "./components/Card.css";
 
 function App() {
   return (
     <div className="bg-dark">
       <Header />
-      <div class="container-fluid text-center text-light">
-        <div class="row">
-          <div class="col-6 col-md-4">Column</div>
-          <div class="col-6 col-md-8">Column</div>
+      <div className="container-fluid text-light ">
+        <div className="row">
+          <div className="col-6 col-md-5">
+            <a
+              href="https://player.vimeo.com/external/488076225.hd.mp4?s=9cf4808c4e76c0a9267abb75dbec48bc451a138f&amp;profile_id=175"
+              className="glightbox_video"
+            >
+              <svg
+                width="200"
+                height="200"
+                viewBox="0 0 131 131"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  className="inner-circle"
+                  d="M65 21C40.1488 21 20 41.1488 20 66C20 90.8512 40.1488 111 65 111C89.8512 111 110 90.8512 110 66C110 41.1488 89.8512 21 65 21Z"
+                  fill="rgba(254, 213, 48, 1)"
+                ></path>
+                <circle
+                  className="outer_circle"
+                  cx="65.5"
+                  cy="65.5"
+                  r="64"
+                  stroke="grey"
+                  style={{
+                    strokeWidth: "1px",
+                  }}
+                ></circle>
+                <path
+                  className="play"
+                  fillRule="evenodd"
+                  clipRule="evenodd"
+                  d="M60 76V57L77 66.7774L60 76Z"
+                  stroke="black"
+                  strokeWidth="2"
+                  fill="none"
+                ></path>
+                <circle
+                  className="progress"
+                  cx="65.5"
+                  cy="65.5"
+                  r="64"
+                  style={{
+                    strokeWidth: "3px",
+                    strokeDasharray: "300",
+                    strokeLinecap: "square",
+                    stroke: "rgba(254, 213, 48, 1)",
+                  }}
+                ></circle>
+              </svg>
+            </a>
+          </div>
+          <div className="col-6 col-md-7">
+            <h1>Find your movies here!</h1>
+            <p>
+              Explore our gallery full of exciting films from all around the
+              globe only your yor entertainments. No hidden charges or
+              disturbing ads.
+            </p>
+          </div>
         </div>
       </div>
+
       <div className="container text-center mb-5">
         <div className="row d-flex justify-content-between align-items-center mb-5 flex-wrap">
           <div className="col-6 col-md-4 text-start fs-2 fw-bold text-light">
