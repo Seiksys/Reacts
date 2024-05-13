@@ -3,11 +3,9 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
 
-
-
 function SearchPage() {
-    return ( 
-        <div className="bg-dark">
+  return (
+    <div className="bg-dark">
       <Header />
       <div
         className="container-fluid text-light text-center d-flex align-items-center justify-content-center"
@@ -70,19 +68,12 @@ function SearchPage() {
             </a>
           </div>
           <div className="col-6 col-md-6 text-start px-5">
-            <Link to="/search">
-              <h1
-                className="fw-bold"
-                style={{ fontSize: "72px", width: "600px" }}
-              >
-                Find your movies <br></br>here!
-              </h1>
-            </Link>
-            <p style={{ fontSize: "16px", width: "502px" }}>
-              Explore our gallery full of exciting films from all around the
-              globe <br></br>only your yor entertainments. No hidden charges or
-              disturbing ads.
-            </p>
+            <h1
+              className="fw-bold"
+              style={{ fontSize: "48px", width: "600px" }}
+            >
+              Search your movies here!
+            </h1>
           </div>
         </div>
       </div>
@@ -300,7 +291,7 @@ function SearchPage() {
       </div>
       <Footer />
     </div>
-     );
+  );
 }
 
 export default SearchPage;
