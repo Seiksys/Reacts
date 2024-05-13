@@ -4,7 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css"; // 导入 Bootstrap 样式
 
 function Header() {
   return (
-    <div className="d-flex flex-column"style={{ background: "linear-gradient(to right, rgba(0, 0, 0, 0) 10%, #000000 100%)" }}>
+    <div className="d-flex flex-column"style={{ background: "linear-gradient(to right, rgba(0, 0, 0, 0) 1%, #000000 100%)" }}>
       <nav className="navbar navbar-expand-lg">
         <div className="container text-center">
           <a className="navbar-brand fs-2 fw-bold text-light me-4" href="#">
