@@ -1,12 +1,13 @@
 import React from "react";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
-import "./components/Card.css";
 
-function App() {
-  return (
-    <div className="bg-dark">
+
+
+function SearchPage() {
+    return ( 
+        <div className="bg-dark">
       <Header />
       <div
         className="container-fluid text-light text-center d-flex align-items-center justify-content-center"
@@ -299,7 +300,7 @@ function App() {
       </div>
       <Footer />
     </div>
-  );
+     );
 }
 
-export default App;
+export default SearchPage;

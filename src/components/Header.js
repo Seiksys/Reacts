@@ -1,5 +1,6 @@
 import React from "react";
 import userImage from "./my.jpg";
+import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css"; // 导入 Bootstrap 样式
 
 function Header() {
@@ -7,9 +8,9 @@ function Header() {
     <div style={{ background: "linear-gradient(to right, rgba(0, 0, 0, 0) 10%, #000000 100%)" }}>
       <nav className="navbar navbar-expand-lg">
         <div className="container text-center">
-          <a className="navbar-brand fs-2 fw-bold text-light me-4" href="#">
+          <Link  className="navbar-brand fs-2 fw-bold text-light me-4" to="/search">
             PcariMovie
-          </a>
+          </Link >
           <button
             className="navbar-toggler"
             type="button"
@@ -24,9 +25,9 @@ function Header() {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0 ">
               <li className="nav-item me-4">
-                <a className="nav-link active text-light " aria-current="page" href="#">
+                <Link className="nav-link active text-light " aria-current="page" to="/search">
                   Home
-                </a>
+                </Link>
               </li>
               <li className="nav-item me-4">
                 <a className="nav-link text-light" href="#">
