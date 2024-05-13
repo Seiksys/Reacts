@@ -7,16 +7,16 @@ function App() {
   return (
     <div className="bg-dark">
       <Header />
-      <div className="container-fluid text-light ">
+      <div className="container-fluid text-light text-center bg-primary d-flex align-items-center justify-content-center" style={{ height: "666px" }}>
         <div className="row">
-          <div className="col-6 col-md-5">
+          <div className="col-6 col-md-5 px-5" >
             <a
               href="https://player.vimeo.com/external/488076225.hd.mp4?s=9cf4808c4e76c0a9267abb75dbec48bc451a138f&amp;profile_id=175"
               className="glightbox_video"
             >
               <svg
-                width="200"
-                height="200"
+                width="300"
+                height="300"
                 viewBox="0 0 131 131"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -60,16 +60,17 @@ function App() {
               </svg>
             </a>
           </div>
-          <div className="col-6 col-md-7">
-            <h1>Find your movies here!</h1>
-            <p>
+          <div className="col-6 col-md-6 text-start px-5">
+            <h1 className="fw-bold" style={{ fontSize: "72px", width: "600px" }}>Find your movies <br></br>here!</h1>
+            <p style={{ fontSize: "16px", width: "502px" }}>
               Explore our gallery full of exciting films from all around the
-              globe only your yor entertainments. No hidden charges or
+              globe <br></br>only your yor entertainments. No hidden charges or
               disturbing ads.
             </p>
           </div>
         </div>
       </div>
+
 
       <div className="container text-center mb-5">
         <div className="row d-flex justify-content-between align-items-center mb-5 flex-wrap">
