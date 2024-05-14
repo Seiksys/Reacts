@@ -1,10 +1,9 @@
-import React from "react";
+import React from 'react';
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import { Link } from "react-router-dom";
 import "./components/Card.css";
 
-function App() {
+function MainApp() { // 将 App 改为 MainApp
   return (
     <div className="bg-dark">
       <Header />
@@ -69,14 +68,12 @@ function App() {
             </a>
           </div>
           <div className="col-6 col-md-6 text-start px-5">
-            <Link to="/search">
-              <h1
-                className="fw-bold"
-                style={{ fontSize: "72px", width: "600px" }}
-              >
-                Find your movies <br></br>here!
-              </h1>
-            </Link>
+            <h1
+              className="fw-bold"
+              style={{ fontSize: "72px", width: "600px" }}
+            >
+              Find your movies <br></br>here!
+            </h1>
             <p style={{ fontSize: "16px", width: "502px" }}>
               Explore our gallery full of exciting films from all around the
               globe <br></br>only your yor entertainments. No hidden charges or
@@ -96,7 +93,7 @@ function App() {
             </div>
           </div>
           <div className="row">
-            <div className="col-md-6 col-lg-8 mb-5">
+            <div className="col-md-6 col-lg-8 mb-3">
               <a href="your_link_here">
                 <div className="card custom-card text-bg-dark">
                   <div className="fantasy">Fantasy</div>
@@ -302,4 +299,4 @@ function App() {
   );
 }
 
-export default App;
+export default MainApp;
