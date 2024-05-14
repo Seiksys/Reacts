@@ -2,8 +2,6 @@ import React from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 
-
-
 function SearchPage() {
   return (
     <div className="bg-dark">
@@ -75,37 +73,101 @@ function SearchPage() {
             >
               Search your movies here!
             </h1>
-            <div className="d-flex mb-3">
-              <div className="form-outline position-relative me-3">
-                <input type="text" className="form-control ps-5" style={{ width: '399px', borderRadius: '200px', height: '54px' }} placeholder="Search by theatre...." />
-                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="black" className="svg-inline--fa fa-user fa-w-14 fa-fw position-absolute top-50 start-0 translate-middle-y ms-3" viewBox="0 0 16 16">
-                  <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
-                </svg>
-              </div>
-
-              <div className="form-outline position-relative">
-                <input type="text" className="form-control ps-5" style={{ width: '176px', borderRadius: '200px', height: '54px' }} placeholder="23/12/2021" />
-                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="black" className="svg-inline--fa fa-user fa-w-14 fa-fw position-absolute top-50 start-0 translate-middle-y ms-3" viewBox="0 0 16 16">
+            <div>
+              <div className="form-outline position-relative me-3 mb-3">
+                <input
+                  type="text"
+                  className="form-control ps-5"
+                  style={{
+                    width: "600px",
+                    borderRadius: "40px",
+                    height: "50px",
+                    padding: "13px, 22px, 13px, 22px",
+                  }}
+                  placeholder="Theatre name...."
+                />
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="21"
+                  height="21"
+                  fill="black"
+                  className="svg-inline--fa fa-user fa-w-14 fa-fw position-absolute top-50 start-0 translate-middle-y ms-3"
+                  viewBox="0 0 16 16"
+                >
                   <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
                 </svg>
               </div>
             </div>
-            <button type="button" className="btn btn-warning fw-bold " style={{ width: '161px', borderRadius: '27px', height: '54px', fontFamily: 'DM Sans', fontSize: '21px' }}>Search</button>
+            <div className="d-flex mb-3">
+              <div className="form-outline position-relative me-3">
+                <input
+                  type="text"
+                  className="form-control ps-5"
+                  style={{
+                    width: "301px",
+                    borderRadius: "40px",
+                    height: "54px",
+                  }}
+                  placeholder="23/12/2021 - 10.00 AM"
+                />
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="21"
+                  height="21"
+                  fill="black"
+                  className="svg-inline--fa fa-calendar fa-w-14 fa-fw position-absolute top-50 start-0 translate-middle-y ms-3"
+                  viewBox="0 0 16 16"
+                >
+                  <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 5v9a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V5H1zm1-3a1 1 0 0 0-1 1v1h14V3a1 1 0 0 0-1-1h-1v.5a.5.5 0 0 1-1 0V2h-8v.5a.5.5 0 0 1-1 0V2H2z" />
+                </svg>
+              </div>
 
-
-
+              <div className="form-outline position-relative me-3">
+                <input
+                  type="text"
+                  className="form-control ps-5"
+                  style={{
+                    width: "288px",
+                    borderRadius: "40px",
+                    height: "54px",
+                  }}
+                  placeholder="23/12/2021 - 12.00 AM"
+                />
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="21"
+                  height="21"
+                  fill="black"
+                  className="svg-inline--fa fa-calendar fa-w-14 fa-fw position-absolute top-50 start-0 translate-middle-y ms-3"
+                  viewBox="0 0 16 16"
+                >
+                  <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 5v9a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V5H1zm1-3a1 1 0 0 0-1 1v1h14V3a1 1 0 0 0-1-1h-1v.5a.5.5 0 0 1-1 0V2h-8v.5a.5.5 0 0 1-1 0V2H2z" />
+                </svg>
+              </div>
+            </div>
+            <button
+              type="button"
+              className="btn btn-warning fw-bold "
+              style={{
+                width: "161px",
+                borderRadius: "27px",
+                height: "54px",
+                fontFamily: "DM Sans",
+                fontSize: "21px",
+              }}
+            >
+              Search
+            </button>
           </div>
         </div>
       </div>
       <div className="container-fluid bg-black bg-opacity-25">
         <div className="container text-center  ">
-          <div className="row d-flex justify-content-between align-items-center mb-5 flex-wrap">
+          <div className="row mb-5 ">
             <div className="col-6 col-md-4 text-start fs-2 fw-bold text-light mt-5">
-            Search Results
+              Search Results
             </div>
-            <div className="col-6 col-md-4 text-end fs-5 mt-5">
-              <button className="btn btn-link custom-btn">View More</button>
-            </div>
+            
           </div>
           <div className="row">
             <div className="col-md-6 col-lg-4 mb-3">
@@ -186,7 +248,7 @@ function SearchPage() {
                   <div className="titles">Her & HIm</div>
                 </div>
               </a>
-            </div>  
+            </div>
 
             <div className="col-md-6 col-lg-4">
               <a href="your_link_here">
