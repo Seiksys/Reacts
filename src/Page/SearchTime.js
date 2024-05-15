@@ -17,19 +17,19 @@ function SearchPage() {
         <div className="row">
           <div className="col-6 col-md-5 px-5">
             <a
-              href="https://player.vimeo.com/external/488076225.hd.mp4?s=9cf4808c4e76c0a9267abb75dbec48bc451a138f&amp;profile_id=175"
+              href="https://www.youtube.com/"
               className="glightbox_video"
             >
               <svg
-                width="300"
-                height="300"
+                width="274px"
+                height="274px"
                 viewBox="0 0 131 131"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
                   className="inner-circle"
-                  d="M65 21C40.1488 21 20 41.1488 20 66C20 90.8512 40.1488 111 65 111C89.8512 111 110 90.8512 110 66C110 41.1488 89.8512 21 65 21Z"
+                  d="M65 21C41.781 21 21 41.781 21 65C21 88.219 41.781 109 65 109C88.219 109 109 88.219 109 65C109 41.781 88.219 21 65 21Z"
                   fill="rgba(254, 213, 48, 1)"
                 ></path>
                 <circle
@@ -167,7 +167,7 @@ function SearchPage() {
             <div className="col-6 col-md-4 text-start fs-2 fw-bold text-light mt-5">
               Search Results
             </div>
-            
+
           </div>
           <div className="row">
             <div className="col-md-6 col-lg-4 mb-3">

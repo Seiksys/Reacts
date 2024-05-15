@@ -6,7 +6,7 @@ function UpdateUserButton() {
   const { setUser } = useContext(UserContext);
 
   const handleClick = () => {
-    setUser({ name: "Jane Doe", avatar: newUserImage });
+    setUser({ name: "", avatar: newUserImage });
   };
 
   return (

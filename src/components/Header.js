@@ -1,15 +1,17 @@
-import React, { useContext } from "react"; // 导入 useContext
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
-import "bootstrap/dist/css/bootstrap.min.css"; // 导入 Bootstrap 样式
-import { UserContext } from "../UserContext"; // 导入 UserContext
+import "bootstrap/dist/css/bootstrap.min.css";
+import { UserContext } from "../UserContext";
+import newUserImage from '../components/newUserImage.jpg';
 
 function Header() {
-  const { user, updateUserName } = useContext(UserContext); // Assuming user context includes both user info and update function
-  // Check if user context is provided correctly and includes these properties
+  const { user, updateUserName, updateUserAvatar } = useContext(UserContext);
 
   const handleChangeName = () => {
-    updateUserName("seik");
+    updateUserName("Seik");
+    updateUserAvatar(newUserImage);
   };
+
   return (
     <div
       style={{
@@ -35,13 +37,25 @@ function Header() {
           </button>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0 ">
-              <li className="nav-item me-4">
+              <li className="nav-item active me-4">
                 <Link
-                  className="nav-link active text-light "
+                  className="nav-link active text-light"
                   aria-current="page"
                   to="/"
+                  style={{ position: 'relative' }}
                 >
                   Home
+                  <span
+                    style={{
+                      position: 'absolute',
+                      left: 0,
+                      bottom: '-1px',
+                      width: '100%',
+                      height: '3px',
+                      backgroundColor: 'yellow',
+                      content: '',
+                    }}
+                  />
                 </Link>
               </li>
               <li className="nav-item me-4">
@@ -50,29 +64,29 @@ function Header() {
                 </Link>
               </li>
               <li className="nav-item me-4">
-                <a className="nav-link text-light" href="#">
+                <Link className="nav-link text-light" to="/">
                   TV Show
-                </a>
+                </Link>
               </li>
               <li className="nav-item me-4">
-                <a className="nav-link text-light" href="#">
+                <Link className="nav-link text-light" to="/">
                   Video
-                </a>
+                </Link>
               </li>
               <li className="nav-item me-4">
-                <a className="nav-link text-light" href="#">
+                <Link className="nav-link text-light" to="/">
                   FAQ
-                </a>
+                </Link>
               </li>
               <li className="nav-item me-4">
-                <a className="nav-link text-light" href="#">
+                <Link className="nav-link text-light" to="/">
                   Pricing
-                </a>
+                </Link>
               </li>
               <li className="nav-item me-4">
-                <a className="nav-link text-light" href="#">
+                <Link className="nav-link text-light" to="/">
                   Contact Us
-                </a>
+                </Link>
               </li>
             </ul>
             <div className="d-flex align-items-center">
@@ -104,6 +118,7 @@ function Header() {
                   <button
                     className="m-0 fw-bold text-light"
                     onClick={handleChangeName}
+                    style={{ border: "none", backgroundColor: "transparent" }}
                   >
                     {user.name}
                   </button>
